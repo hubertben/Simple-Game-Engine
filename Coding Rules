@@ -1,0 +1,5 @@
+- Camel Case All Variables
+- Spaces after conditional statement
+- Loop increment "--i"
+- Parameter Line Speration if alot of parameters
+- Use "const" as much as you can
