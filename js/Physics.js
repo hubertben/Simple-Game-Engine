@@ -6,7 +6,7 @@ class Physics{
         this.velocity = velocity;
     }
 
-    constructor(entity){
+    constructor(entity) {
         this.entity = entity;
     }
 

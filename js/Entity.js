@@ -14,7 +14,6 @@ class Entity{
     updatePosition(velocity, deltaTime){
         this.x += this.velocity.x + deltaTime;
         this.y += this.velocity.y + deltaTime;
-        
     }
 
 }
