@@ -2,23 +2,15 @@
     Base class for entities in the game
 */
 
-class Entity{
+class Entity {
 
     constructor(x, y) {
-        this.x = x;
-        this.y = y;
-
-        this.velocity = new Vector();
-    }
-    
-    setPosition(x, y){
-        this.x = x;
-        this.y = y;
+        this.position = new Vector(x, y);
+        this.physics = new Physics(this);
     }
 
-    updatePosition(velocity, deltaTime){
-        this.x += this.velocity.x + deltaTime;
-        this.y += this.velocity.y + deltaTime;
+    update(deltaTime) {
+        this.physics.update(deltaTime);
     }
 
 }

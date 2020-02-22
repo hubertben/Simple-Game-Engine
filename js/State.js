@@ -4,6 +4,10 @@ class State {
         this.stateMgr = sMgr;
     }
 
+    handleInput(event) {
+
+    }
+
     update(ctx) {
 
     }

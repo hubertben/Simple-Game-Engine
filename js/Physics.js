@@ -1,22 +1,20 @@
 
-class Physics{
+class Physics {
 
-    constructor(entity, velocity = null) {
+    constructor(entity, velocity=null) {
         this.entity = entity;
-        this.velocity = velocity;
+        this.velocity = velocity || new Vector();
+        this.acceleration = new Vector();
     }
 
-    constructor(entity) {
-        this.entity = entity;
-    }
-
-    start() {
-        // Starting Code
+    applyForce(vec) {
+        this.entity.acceleration.add(vec);
     }
 
     update(deltaTime) {
-        this.entity.updatePosition(this.velocity, deltaTime);
+        this.velocity.add(this.acceleration.scale(deltaTime));
+        this.entity.position.add(this.velocity);
+        this.acceleration.clear();
     }
-
 
 }
