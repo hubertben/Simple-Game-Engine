@@ -4,11 +4,16 @@
 
 class Entity{
 
-    constructor() {
-        this.x = 0;
-        this.y = 0;
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
 
         this.velocity = new Vector();
+    }
+    
+    setPosition(x, y){
+        this.x = x;
+        this.y = y;
     }
 
     updatePosition(velocity, deltaTime){
