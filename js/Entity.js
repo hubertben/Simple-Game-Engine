@@ -1,0 +1,3 @@
+/*
+    Base class for entities in the game
+*/

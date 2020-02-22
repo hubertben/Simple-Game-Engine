@@ -1,0 +1,3 @@
+/*
+    Provides access to canvas
+*/

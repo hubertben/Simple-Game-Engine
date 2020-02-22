@@ -1,0 +1,3 @@
+/*
+    Contains base class for collisions
+*/
