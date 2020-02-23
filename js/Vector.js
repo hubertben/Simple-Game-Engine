@@ -4,55 +4,31 @@ class Vector {
         this.x = x;
         this.y = y;
     }
-
-    /*
-        Adds vector to this vector
-    */
-
+    
     add(vec) {
         this.x += vec.x;
         this.y += vec.y;
     }
-
-    /*
-        Subtracts vector from this vector
-    */
-
+    
     subtract(vec) {
         this.x -= vec.x;
         this.y -= vec.y;
     }
-
-    /*
-        Multiplies vector to this vector
-    */
-
+    
     multiply(vec) {
         this.x *= vec.x;
         this.y *= vec.y;
     }
-
-    /*
-        Divides vector from this vector
-    */
 
     divide(vec) {
         this.x /= vec.x;
         this.y /= vec.y;
     }
 
-    /*
-        Scales This vector by a Constant
-    */
-
     scale(c) {
         this.x *= c;
         this.y *= c;
     }
-
-    /*
-        Returns the dot product of 2 vectors
-    */
 
     dot(vec) {
         return this.x * vec.x + this.y * vec.y;
